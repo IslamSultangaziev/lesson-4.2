@@ -1,9 +1,9 @@
 //1//
 let count = 0;
 
-const counter = document.getElementById("counter");
-const increment = document.getElementById("increment");
-const decrement = document.getElementById("decrement");
+const counter = document.querySelector("#counter");
+const increment = document.querySelector("#increment");
+const decrement = document.querySelector("#decrement");
 
 increment.addEventListener("click", function () {
     count = count + 1;
@@ -22,7 +22,7 @@ decrement.addEventListener("click", function () {
 });
 
 //2//
-const box = document.getElementById("box");
+const box = document.querySelector("#box");
 
 box.addEventListener("mousemove", function (event) {
     const x = event.offsetX;
@@ -31,7 +31,7 @@ box.addEventListener("mousemove", function (event) {
     box.textContent = `x: ${x} y: ${y}`;
 });
 //3//
-const colorInput = document.getElementById("colorInput");
+const colorInput = document.querySelector("#colorInput");
 
 colorInput.addEventListener("input", function () {
     document.body.style.backgroundColor = colorInput.value;
